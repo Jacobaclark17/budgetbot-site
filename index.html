@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BudgetBot — personal budgeting & debt payoff</title>
+<meta name="description" content="BudgetBot is a personal budgeting and debt-payoff app. Read-only bank connections. Your data is never sold." />
+<style>
+  :root{ --ink:#11181C; --muted:#687076; --accent:#0A7EA4; --green:#30A46C; --bg:#F5F6F8; --card:#fff; --border:#ECEDEE; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+  .wrap{ max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header{ display:flex; align-items:center; gap:14px; margin:24px 0 8px; }
+  .logo{ width:56px; height:56px; border-radius:14px; background:linear-gradient(145deg,#0E96C4,#075A7C); display:flex; align-items:center; justify-content:center; }
+  .logo span{ color:#fff; font-weight:800; font-size:26px; }
+  h1{ font-size:30px; margin:0; }
+  .tag{ color:var(--muted); font-size:16px; margin:4px 0 28px; }
+  .card{ background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px 22px; margin-bottom:18px; }
+  h2{ font-size:15px; text-transform:uppercase; letter-spacing:.5px; color:var(--muted); margin:0 0 10px; }
+  h3{ font-size:16px; margin:18px 0 6px; }
+  p{ margin:8px 0; }
+  ul{ margin:8px 0; padding-left:20px; }
+  li{ margin:4px 0; }
+  .pill{ display:inline-block; font-size:13px; font-weight:600; color:var(--green); background:#EAF6EF; border-radius:999px; padding:4px 12px; margin:2px 6px 2px 0; }
+  a{ color:var(--accent); }
+  .muted{ color:var(--muted); font-size:13px; }
+  footer{ color:var(--muted); font-size:13px; margin-top:28px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><span>B</span></div>
+    <div>
+      <h1>BudgetBot</h1>
+    </div>
+  </header>
+  <p class="tag">A personal budgeting and debt-payoff app — connect your free cash flow to an optimized payoff plan.</p>
+
+  <div class="card">
+    <h2>What it does</h2>
+    <p>BudgetBot takes your monthly cash flow and routes it into an optimal debt-payoff plan — showing your debt-free date, interest saved, and net worth over time. It grew out of a spreadsheet that tracked savings and debt on separate tabs and never connected them. Connecting them is the product.</p>
+    <div style="margin-top:10px">
+      <span class="pill">Read-only</span>
+      <span class="pill">Data never sold</span>
+      <span class="pill">No money movement</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>How it uses Plaid</h2>
+    <p>With your permission, BudgetBot uses Plaid to securely read your account <strong>transactions and balances</strong> so it can show your spending, net worth, and payoff plan against real data.</p>
+    <ul>
+      <li><strong>Read-only.</strong> BudgetBot can never move money, make payments, or initiate transfers.</li>
+      <li><strong>Your credentials stay with your bank.</strong> Bank logins are entered through Plaid — BudgetBot never sees them.</li>
+      <li><strong>You stay in control.</strong> Link and unlink any time from within the app or Plaid Portal.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="muted">Effective 2026-07-07 · Contact: jacobaclark17@gmail.com</p>
+
+    <h3>The short version</h3>
+    <p>Your financial data stays on your device. BudgetBot never sells, shares, or monetizes your data — the product is a paid app, not your data.</p>
+
+    <h3>What we process</h3>
+    <p>Data you enter (budget, deductions, debts, an optional manually-entered credit score) and, only if you choose to link an account, read-only transactions and balances retrieved via Plaid.</p>
+
+    <h3>Where it lives</h3>
+    <p>All processing is local to your device. Plaid-retrieved transactions and balances are held in memory during a session and are not written to disk unencrypted. Any bank access token is stored encrypted under your operating-system user account.</p>
+
+    <h3>What we never do</h3>
+    <ul>
+      <li>No sale, sharing, or transfer of your data to third parties.</li>
+      <li>No advertising, no lead generation to lenders, no data-derived revenue.</li>
+      <li>No payments or money movement — the Plaid scope is read-only.</li>
+    </ul>
+
+    <h3>Consent</h3>
+    <p>Linking an account is initiated by you through Plaid Link, which presents Plaid's own consent flow. You can withdraw consent at any time by unlinking.</p>
+
+    <h3>Retention &amp; deletion</h3>
+    <p>Data is retained only on your device and only until you delete it — via in-app reset, clearing the feed, or revoking the Plaid connection (which severs bank access and invalidates the token). This policy is reviewed periodically for compliance with applicable privacy law.</p>
+  </div>
+
+  <footer>© 2026 BudgetBot · jacobaclark17@gmail.com</footer>
+</div>
+</body>
+</html>
